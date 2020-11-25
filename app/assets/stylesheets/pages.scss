@@ -1,6 +1,400 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.hello {
-  background: red;
+body {
+  background: #e6ecf0;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Raleway', serif;
+}
+
+p {
+  font-family: 'Roboto' sans-serif,
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.center-btn {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+.btn {
+  border-radius: 2px;
+}
+
+.btn-primary {
+  background: #29a3ef;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #108ad5
+}
+
+h1 {
+  color: #29a3ef;
+}
+
+.title-wrapper {
+  background: white;
+  padding: 15px 0px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 300px;
+  padding-left: 20px;
+  margin: 0px auto;
+}
+
+.twee-stuff {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.root {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.tweets-title {
+  padding: 10px 0px;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+  background: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index:98;
+  margin-bottom: 25px;
+}
+
+.tweets-title h1 {
+  margin-top: 0px;
+}
+
+.tweets-stuff {
+  margin-top: 10px;
+  top: 300px;
+}
+
+.spacer {
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50%;
+  margin-bottom: 40px;
+  z-index: 99;
+}
+
+.twee-container {
+  color: white;
+  height: 100px;
+}
+
+.twee {
+  width: 100%;
+  position: relative;
+}
+
+.twee-head {
+  height: 50px;
+  border: transparent 1px solid;
+  background: #29a3ef;
+  margin: 3px;
+  -webkit-box-shadow: 1px 1px 3px 1px rgba(175,194,207,1);
+  -moz-box-shadow: 1px 1px 3px 1px rgba(175,194,207,1);
+  box-shadow: 1px 1px 3px 1px rgba(175,194,207,1);
+}
+
+.inner-twee {
+  margin: 15px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.twee-name {
+  text-align: center;
+  width: 33%;
+}
+
+.twee-settings-container {
+  width: 33%;
+  text-align: left;
+}
+
+.twee-settings {
+  margin-left: 10px;
+  text-align: left;
+  position: relative;
+  display: inline-block;
+}
+
+.twee-settings:hover {
+  i {
+    font-size: 15px;
+  }
+}
+
+.twee-spacer {
+  width: 33%;
+}
+
+
+.dropdown-item {
+  background: white;
+  color: #29a3ef;
+  padding: 5px;
+}
+
+.dropdown-item:hover {
+  background: #eff3f5;
+  cursor: pointer;
+}
+
+.show {
+  -webkit-box-shadow: 1px 1px 8px -1px rgba(84,84,84,1);
+  -moz-box-shadow: 1px 1px 8px -1px rgba(84,84,84,1);
+  box-shadow: 1px 1px 8px -1px rgba(84,84,84,1);
+  position: absolute;
+  top: 40;
+  left: 0;
+  width: 100px;
+  z-index: 100;
+}
+
+.hide {
+  display: none;
+}
+
+.twee-settings i:hover {
+  cursor: pointer;
+}
+
+.child-twees {
+  display: flex;
+  height: 100px;
+}
+
+.new-twee-container {
+  color: black;
+  background: #e6ecf0;
+  height: 50px;
+  border: #29a3ef 1px dashed;
+  margin: 3px;
+}
+
+.new-input {
+  margin-top: 8px;
+  width: 80%;
+  height: 20px;
+}
+
+.new-twee-btn {
+  margin-top: 3px;
+  color: #29a3ef;
+}
+
+
+.tweet {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 0px;
+}
+
+.tweets {
+  margin: 0px 200px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .tweets {
+      margin: 25px 150px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .tweets {
+      margin: 25px 100px;
+    }
+}
+
+.tweet-container {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  border-bottom: #bfbfbf solid 1px;
+}
+
+.selector {
+  margin-top: 30px;
+}
+
+.selector select{
+  width: 100px;
+}
+
+.twee-modal {
+  position: absolute;
+  height: 107%;
+  width: 280px;
+  background: white;
+  color: black;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 4px;
+}
+
+.modal-btn {
+  margin-left: 25px;
+  padding: 3px 9px;
+  margin-top: 7px;
+}
+
+.modal-text-area {
+  border-radius: 3px;
+  border-color: #435d70;
+  color: #435d70;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.twee-modal h4 {
+  float: left;
+  margin-top: 15px;
+  margin-left: 25px;
+  color: #29a3ef;
+}
+
+.modal-close {
+  color: gray;
+  float: right;
+  margin-top: 5px;
+  margin-right: 7px;
+}
+
+.modal-close:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: black;
+  opacity: 0.4;
+  z-index: 100;
+  display: none;
+}
+
+.back-btn {
+  color: #435d70;
+  font-size: 11px;
+  margin-right: 15px;
+}
+
+.back-btn:hover {
+  color: #304250;
+  cursor: pointer;
+}
+
+.head-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.thread-thread {
+  border: 1px solid #e1e8ed;
+  background: white;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 10px;
+  width: 500px;
+  font-weight: 500;
+}
+
+.thread-thread:hover {
+  border: 1px solid #cfdae2;
+  cursor: pointer;
+}
+
+.thread-btns {
+  margin: 0px !important;
+}
+
+.flex-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-title div {
+  width: 100px;
+}
+
+.thread-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.thread-wrap .side {
+  width: 50px;
+}
+
+.grabber {
+  font-size: 20px;
+  color: #435d70;
+  float: right;
+}
+
+.grabber:hover {
+  color: #304250;
+  font-size: 21px;
+  cursor: grab;
+}
+
+.grabber:active {
+  cursor: grabbing;
+}
+
+.test-wrap {
+  height: 150px;
+  width: 500px;
+  background: white;
+  border: 1px solid #e1e8ed;
+  padding: 0px 10px;
 }

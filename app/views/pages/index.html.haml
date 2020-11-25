@@ -1,0 +1,8 @@
+.outer
+  .middle
+    .text-center
+      - unless signed_in?
+        = link_to "Sign in with Twitter", twitter_path, class: "btn btn-primary center-btn"
+      -else
+        = link_to "Load Tweets", load_tweets_path, class: "btn btn-primary center-btn"
+

@@ -4,13 +4,15 @@
     <title>ThredZero</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <%= stylesheet_link_tag 'application', "https://fonts.googleapis.com/css?family=Raleway|Roboto" %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application' %>
   </head>
 
   <body>
-    <%= render 'shared/nav_bar' %>
-    <%= yield %>
+    <div class="overlay">
+    </div>
+      <%= render 'shared/nav_bar' %>
+      <%= yield %>
   </body>
 </html>
